@@ -1,11 +1,9 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
-
 [submodule "bundle/tabular"]
     path = bundle/tabular
     url = git://github.com/godlygeek/tabular.git
-
 [submodule "bundle/vim-code-dark"]
     path = bundle/vim-code-dark
     url = git@github.com:tomasiser/vim-code-dark.git
