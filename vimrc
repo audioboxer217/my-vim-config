@@ -2,7 +2,7 @@
 syntax on 
 filetype plugin indent on
 
-" colorscheme codedark
+colorscheme codedark
 
 set tabstop=4
 set softtabstop=4
