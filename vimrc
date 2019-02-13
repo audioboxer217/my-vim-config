@@ -7,9 +7,10 @@ colorscheme codedark
 set number "Line Numbers
 set cursorline
 set autoindent
+set smartindent
 set incsearch "search as chars entered
 set hlsearch "highlight matches
-set tabstop=2
+set tabstop=8
 set softtabstop=2
 set shiftwidth=2
 set expandtab
