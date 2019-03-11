@@ -1,5 +1,5 @@
 " execute pathogen#infect()
-syntax on 
+syntax on
 filetype plugin indent on
 
 colorscheme codedark
@@ -16,3 +16,8 @@ set shiftwidth=2
 set expandtab
 
 let g:airline_powerline_fonts=1
+
+" Set paste toggle to <F2>
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
