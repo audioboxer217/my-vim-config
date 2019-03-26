@@ -21,3 +21,6 @@ let g:airline_powerline_fonts=1
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+" Key Mappings
+map <C-n> :NERDTreeToggle<CR>
