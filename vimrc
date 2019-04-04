@@ -2,7 +2,9 @@
 syntax on
 filetype plugin indent on
 
-colorscheme codedark
+set termguicolors
+" colorscheme codedark
+colorscheme sublimemonokai
 
 set number "Line Numbers
 set cursorline
