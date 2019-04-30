@@ -3,17 +3,26 @@
 " --------------------
 syntax on
 filetype plugin indent on
-set number "Line Numbers
+set number relativenumber "Hybrid Line Numbers
 set cursorline
 set autoindent
 set smartindent
 set incsearch "search as chars entered
 set hlsearch "highlight matches
-set tabstop=8
+set tabstop=4
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set title
+set nobackup
+set noswapfile
 
+" Automatically turn off hybrid line numbers
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 " ------------------
 " -- Color Scheme --
 " ------------------
