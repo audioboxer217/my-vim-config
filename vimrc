@@ -48,6 +48,8 @@ let g:terraform_fmt_on_save=1
 " -- Key Mappings --
 " ------------------
 
+" change the mapleader from \ to ,
+let mapleader=","
 " Set paste toggle to <F2>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -59,4 +61,22 @@ nmap <leader>f :Files<cr>    " fuzzy find files in the working directory
 nmap <leader>/ :BLines<cr>   " fuzzy find lines in the current file
 nmap <leader>b :Buffers<cr>  " fuzzy find an open buffer
 nmap <leader>r :Rg           " fuzzy find text in the working directory
-nmap <leader>c :Commands<cr> " fuzzy find Vim commands
+" Clear search highlight
+nmap <silent> ./ :nohlsearch<CR>
+" save file as sudo using !!
+cmap w!! w !sudo tee % >/dev/null
+" Disable keyboard arrows
+nnoremap <up> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+nnoremap <down> <nop>
+" Keymap for switching panels
+map <silent> <SPACE>k :wincmd k<CR>
+map <silent> <SPACE>j :wincmd j<CR>
+map <silent> <SPACE>h :wincmd h<CR>
+map <silent> <SPACE>l :wincmd l<CR>
+" keymap for resizing split windows
+map <left> :5winc ><CR>
+map <right> :5winc <<CR>
+map <down> :5winc +<CR>
+map <up> :5winc -<CR>
