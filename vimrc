@@ -60,7 +60,7 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <leader>f :Files<cr>    " fuzzy find files in the working directory
 nmap <leader>/ :BLines<cr>   " fuzzy find lines in the current file
 nmap <leader>b :Buffers<cr>  " fuzzy find an open buffer
-nmap <leader>r :Rg           " fuzzy find text in the working directory
+nmap <leader>r :Rg<cr>       " fuzzy find text in the working directory
 " Clear search highlight
 nmap <silent> ./ :nohlsearch<CR>
 " save file as sudo using !!
