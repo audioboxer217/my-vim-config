@@ -27,8 +27,6 @@ augroup END
 " -- Color Scheme --
 " ------------------
 set termguicolors
-" colorscheme codedark
-colorscheme sublimemonokai
 
 " ---------------------
 " -- Plugin Settings --
