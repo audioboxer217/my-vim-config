@@ -60,6 +60,9 @@ let mapleader=","
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+" Copy/Paste to System Clipboard
+vnoremap <C-c> "*y :let @+=@*<CR>
+map <C-v> "+P
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
 " Fuzzy Finder
